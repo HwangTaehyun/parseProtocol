@@ -23,6 +23,7 @@ try {
     parseProtocols(swiftMRProtocols, philipsXML);
     console.log(swiftMRProtocols);
     console.log(swiftMRProtocols.length);
+    swiftMRProtocols.forEach((protocol)=>{console.log(protocol.protocolName)});
     // console.log(util.inspect(philipsXML, { depth: null }));
 } catch (e) {
     console.error('Error occured');
